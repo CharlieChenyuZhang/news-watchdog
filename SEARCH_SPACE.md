@@ -3,6 +3,7 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
+Also run **section G keyword searches** every day (complement to direct site checks).
 
 ## A. Frontier labs — official content + events
 
@@ -77,6 +78,51 @@ Reuters, Bloomberg, FT, WSJ (Tech), TechCrunch, The Information (if accessible),
 ## F. Bay Area events calendar
 
 Always refresh: AI Week SF, OpenAI DevDay, The AI Conference, SF Tech Week, Disrupt, Assembling, Google/Microsoft/local lab workshops, high-signal Luma (founder dinners, demo nights). Include date, venue, why go, link.
+
+
+## G. Keyword search (catch what site crawls miss)
+
+Run these queries every day via the built-in web search tool (see “Search engine” below). Prefer results from the last 24–48 hours; open promising hits with WebFetch and cite the primary page.
+
+### Standing query pack (rotate / adapt date)
+
+**Labs & products**
+- `OpenAI OR Anthropic OR "Google DeepMind" OR "xAI" OR Mistral announce OR launch OR release 2026`
+- `"GPT" OR Claude OR Gemini OR Grok OR "Muse Spark" model (launch OR release OR preview) 2026`
+- `OpenAI DevDay OR "Build with Gemini" OR "AI Conference" OR "SF Tech Week" 2026`
+
+**Safety / policy / RSI**
+- `"pace the frontier" OR "R&D Automation" OR "model misalignment" OR "frontier AI" standards OR evaluator 2026`
+- `AI export control OR "chip ban" OR "AI safety" regulation US OR EU OR California 2026`
+
+**Papers & agents**
+- `site:arxiv.org agent OR LLM OR "tool use" OR verifier 2026` (or arXiv API / HF Daily Papers)
+- `"Hugging Face" "daily papers" AI`
+
+**Capital / infra**
+- `(OpenAI OR Anthropic OR "xAI" OR Mistral OR Perplexity) (funding OR raises OR IPO OR secondary) 2026`
+- `NVIDIA OR CoreWeave OR "GPU cloud" (shortage OR capacity OR pricing) AI 2026`
+
+**Incubators**
+- `"Y Combinator" OR "a16z Speedrun" OR "Plug and Play" OR "Sequoia Arc" OR "Neo Residency" (apply OR deadline OR "Demo Day") 2026`
+- `"Google for Startups" OR Techstars OR "Entrepreneur First" accelerator (application OR deadline) 2026`
+
+**Bay Area events**
+- `San Francisco OR "Bay Area" (AI OR LLM OR "startup") (meetup OR demo OR hackathon OR mixer) (Luma OR "lu.ma") 2026`
+- `site:lu.ma OpenAI OR Anthropic OR "a16z" OR YC San Francisco`
+
+### How to use keyword hits
+1. Site crawl (A–F) is the spine; keyword search is the net for leaks, exclusives, and pages not on the watchlist.
+2. Deduplicate against site crawl; don’t double-count the same announcement.
+3. If search returns nothing useful, say so — don’t pad from stale SEO farms.
+4. Paywalled exclusives: cite the outlet + date; note if full text wasn’t readable.
+
+## Search engine (how this bot searches)
+
+- Primary: Cursor / Grok Bot **built-in WebSearch** — queries an **external web search index** (not a hand-picked “I open Google Chrome and type” workflow). Some sites block or throttle that index, so empty/stale hits ≠ “doesn’t exist.”
+- Direct pages: **WebFetch** / HTTP fetch of known URLs (lab blogs, apply pages, arXiv).
+- Fallback when search/fetch fail: box **browser** for the live page, or `gh`/API for GitHub-hosted material.
+- Not used as the daily spine: random social scrapes without a citable URL.
 
 ## Output rules
 
