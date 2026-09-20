@@ -3,7 +3,7 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
-Also run **section G keyword searches** and **section H discourse** every day (complement to direct site checks).
+Also run **G keywords**, **H discourse**, and **I pre-launch/early-signal radar** every day (complement to direct site checks).
 **Priority #1 for the reader:** do not miss high-signal “everyone is talking about this” items (builder Twitter/X, HN, lab Discord/Slack echoes via public posts). Freshness windows below.
 
 ## A. Frontier labs — official content + events
@@ -153,6 +153,37 @@ This section is **as important as lab official blogs**. Chenyu explicitly does n
 - Prefer primary launch posts + strong secondary (HN, Register, DEV, company blog). No rumor without a URL.
 - Put the hottest discourse items in **TLDR** when founders would feel behind for missing them.
 
+
+
+## I. Pre-launch / early-signal radar (stay ahead of launches like Jev)
+
+Goal: surface **leading indicators** weeks/months before a public launch so Chenyu can try early access, prototype against the idea, or reach out — not discover the product on launch day.
+
+### What counts as an early signal (include when sourced)
+1. **Talent moves** — frontier-lab researchers/engineers leaving to found or join stealth (OpenAI, Anthropic, DeepMind, Meta FAIR, SSI, Thinking Machines, xAI, Google Brain alumni, etc.).
+2. **Stealth / seed financing** — named raises, SAFE filings chatter with reputable outlets, “ex-OpenAI raises $Xm for …”
+3. **Hiring & careers pages** — new stealth companies hiring for “decision models,” “agent control plane,” “RLHF,” “calibra*,” infra; unusual job spikes.
+4. **Early access / waitlists / Gateway listings** — API waitlists, “coming to AI Gateway,” closed betas, Design Partner calls.
+5. **Talks / papers / vague teases** — conference talks, arXiv from known names, “building something new” threads that aren’t vapor.
+6. **Warm intros / reach-out hooks** — when signal is strong, note *who* to contact (founder LinkedIn/X, apply@, waitlist URL) in one line.
+
+### Every-run keyword / source pack
+- `(ex-OpenAI OR "former OpenAI" OR "left OpenAI" OR "ex-Anthropic" OR "former DeepMind") (founder OR founding OR stealth OR raises OR seed) 2026`
+- `(stealth OR "exited stealth" OR waitlist OR "early access" OR "design partner") (AI OR LLM OR agent) (startup OR lab) 2026`
+- `"raising" OR "raised" OR "seed round" OR "Series A" (AI OR LLM) ("ex-OpenAI" OR Anthropic OR DeepMind) 2026`
+- Watch outlets strong on talent/stealth: The Information, Bloomberg, Reuters, TechCrunch, Fortune, Register, Soft-ish Builder Twitter via search (verify before citing).
+- Scan “who left labs this month” style roundups when they appear.
+
+### Confidence labels (required on early signals)
+- **Confirmed** — primary filing, company blog, named reputable outlet
+- **Likely** — multiple secondary sources aligned
+- **Rumor** — single thin source; say so; do not treat as fact
+Never invent a stealth company. Prefer “watch this person/theme” over fake specificity.
+
+### Output placement
+- Hot early signals → **TLDR** + short **Early signals / stealth radar** section
+- Include: who, from where, what they’re building (if known), money if known, **how to get closer** (waitlist / email / X), date of signal
+- Dedupe: once covered, only deltas (closed raise, exited stealth, GA launch)
 
 ## Output rules
 
