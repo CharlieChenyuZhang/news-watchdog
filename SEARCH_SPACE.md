@@ -113,7 +113,7 @@ Run these queries every day via the built-in web search tool (see “Search engi
 
 ### How to use keyword hits
 1. Site crawl (A–F) is the spine; keyword search is the net for leaks, exclusives, and pages not on the watchlist.
-2. Deduplicate against site crawl; don’t double-count the same announcement.
+2. Deduplicate against site crawl and against yesterday’s brief; don’t double-count the same announcement. Prefer **delta-only** continuity (what changed since yesterday), not a full rehash.
 3. If search returns nothing useful, say so — don’t pad from stale SEO farms.
 4. Paywalled exclusives: cite the outlet + date; note if full text wasn’t readable.
 
@@ -123,6 +123,20 @@ Run these queries every day via the built-in web search tool (see “Search engi
 - Direct pages: **WebFetch** / HTTP fetch of known URLs (lab blogs, apply pages, arXiv).
 - Fallback when search/fetch fail: box **browser** for the live page, or `gh`/API for GitHub-hosted material.
 - Not used as the daily spine: random social scrapes without a citable URL.
+
+
+## H. Builder / viral discourse (catch “everyone’s talking about X”)
+
+Site crawls of frontier labs miss **new startups and non-lab product launches** that dominate X / HN / builder Slack. Every run:
+
+1. **Hacker News** — front page + AI/Show HN hits (last 24–48h); open any ≥200-point AI thread.
+2. **Viral launch scan (keyword)** — run:
+   - `TypeSafe OR Jev OR "System One" OR "Diogo Almeida" AI OR LLM 2026`
+   - `(Hacker News OR "Show HN") (AI OR LLM OR agent) (launch OR introduce) 2026`
+   - `site:news.ycombinator.com AI OR LLM OR agent` (via search)
+   - `"AI Gateway" OR "decision model" OR "typed decisions" OR RLCD 2026`
+3. **Still-trending rule:** If a launch is 2–7 days old but still driving founder discourse (HN front page again, major follow-up essays, Vercel/Gateway listings, >1M view threads), include a **delta update** — do not drop it just because it wasn’t “launched today.”
+4. **Named-people watch (refresh as needed):** Diogo Almeida / TypeSafe / Jev; other names the user flags. When the user says “everyone’s talking about X,” add X to this list the same day.
 
 ## Output rules
 
