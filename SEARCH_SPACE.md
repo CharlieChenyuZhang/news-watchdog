@@ -3,7 +3,8 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
-Also run **section G keyword searches** every day (complement to direct site checks).
+Also run **section G keyword searches** and **section H discourse** every day (complement to direct site checks).
+**Priority #1 for the reader:** do not miss high-signal “everyone is talking about this” items (builder Twitter/X, HN, lab Discord/Slack echoes via public posts). Freshness windows below.
 
 ## A. Frontier labs — official content + events
 
@@ -125,20 +126,38 @@ Run these queries every day via the built-in web search tool (see “Search engi
 - Not used as the daily spine: random social scrapes without a citable URL.
 
 
-## H. Builder / viral discourse (catch “everyone’s talking about X”)
+## H. Builder / viral discourse (PRIORITY — “what is everyone talking about?”)
 
-Site crawls of frontier labs miss **new startups and non-lab product launches** that dominate X / HN / builder Slack. Every run:
+This section is **as important as lab official blogs**. Chenyu explicitly does not want to miss high-signal social/builder discourse (e.g. TypeSafe Jev).
 
-1. **Hacker News** — front page + AI/Show HN hits (last 24–48h); open any ≥200-point AI thread.
-2. **Viral launch scan (keyword)** — run:
+### Every run — required
+1. **Hacker News** — front page + top AI/Show HN (last 24–48h). Open threads that look founder-relevant (≥~100–200 points or clearly viral).
+2. **Discourse keyword pack**
    - `TypeSafe OR Jev OR "System One" OR "Diogo Almeida" AI OR LLM 2026`
-   - `(Hacker News OR "Show HN") (AI OR LLM OR agent) (launch OR introduce) 2026`
-   - `site:news.ycombinator.com AI OR LLM OR agent` (via search)
-   - `"AI Gateway" OR "decision model" OR "typed decisions" OR RLCD 2026`
-3. **Still-trending rule:** If a launch is 2–7 days old but still driving founder discourse (HN front page again, major follow-up essays, Vercel/Gateway listings, >1M view threads), include a **delta update** — do not drop it just because it wasn’t “launched today.”
-4. **Named-people watch (refresh as needed):** Diogo Almeida / TypeSafe / Jev; other names the user flags. When the user says “everyone’s talking about X,” add X to this list the same day.
+   - `(Hacker News OR "Show HN" OR "Product Hunt") (AI OR LLM OR agent) (launch OR introduce) 2026`
+   - `"everyone is talking" OR viral OR "blew up" (AI OR LLM OR agent) (launch OR model) 2026` (use judiciously; verify)
+   - Trending builder topics of the week (agents, decision models, evals, voice, computer-use, etc.)
+3. **Named watchlist (grow when user flags a miss):** TypeSafe / Jev / Diogo Almeida; add new names the same day the user mentions them.
+
+### Time windows (label each item)
+| Window | What to include |
+|--------|-----------------|
+| **Last 24h** | Breaking launches, exclusives, new posts |
+| **This week** | Still-hot threads, follow-up essays, Gateway listings, second-wave reactions |
+| **~30 days** | Major launches/discourse the brief never covered, or that still shape founder strategy |
+| **Up to ~6 months** | Only if **high signal + still referenced** OR **never appeared in prior briefs** — one short “catch-up” or “still foundational” bullet with original date, not a full rehash |
+
+### Rules
+- **First-time in this repo’s briefs → include**, even if the launch was weeks ago (mark date; keep short).
+- **Already covered yesterday → delta only** (new metrics, rebuttals, distribution, enterprise uptake) or skip.
+- Prefer primary launch posts + strong secondary (HN, Register, DEV, company blog). No rumor without a URL.
+- Put the hottest discourse items in **TLDR** when founders would feel behind for missing them.
+
 
 ## Output rules
+
+0. **Discourse is a first-class output.** If HN/X/builders are loudly discussing something founder-relevant and it is new to our briefs or still hot, it belongs in TLDR — even if no frontier lab blogged it today.
+
 
 1. TLDR first (include urgent app deadlines).
 2. Sections: Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Trends → Bay Area events.
