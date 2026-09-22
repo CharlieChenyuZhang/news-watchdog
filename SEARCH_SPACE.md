@@ -3,7 +3,7 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
-Also run **G keywords**, **H discourse**, **I pre-launch/early-signal radar**, and **J trends/topics/directions** every day (complement to direct site checks).
+Also run **G keywords**, **H discourse**, **I pre-launch/early-signal radar**, **J trends/topics/directions**, and **K what to read / what to watch** every day (complement to direct site checks).
 **Priority #2 for the reader:** a short judgmental summary of *what directions are hot* (LLM / agents / AI agency / safety / infra / …) — topics, keywords, what’s heating up next month vs next year — not just a news dump.
 **Priority #1 for the reader:** do not miss high-signal “everyone is talking about this” items (builder Twitter/X, HN, lab Discord/Slack echoes via public posts). Freshness windows below.
 
@@ -193,7 +193,7 @@ Never invent a stealth company. Prefer “watch this person/theme” over fake s
 Goal: every day, give Chenyu a **synthesis** of where AI / LLM / agents / “AI agency” discourse is pointing — not another news list. Answer: what’s hot *now*, which **topics/keywords** keep recurring, and what looks likely to heat up **next ~month** and **next ~year**. Example signal he care about: a friend saying “AI safety is getting hotter” should show up here with evidence and a call on whether that’s ambient chatter or capital/talent shifting.
 
 ### Every run — required synthesis
-1. Scan today’s hits from A–I (labs, papers, HN, capital, policy, early signals) and extract **themes**, not headlines.
+1. Scan today’s hits from A–K (labs, papers, HN, capital, policy, early signals, media) and extract **themes**, not headlines.
 2. Run a light **topics keyword pack** (adapt; don’t invent fake virality):
    - `(AI OR LLM OR agent OR "AI agent" OR agency) (trend OR thesis OR "everyone is" OR discourse OR narrative) 2026`
    - `"AI safety" OR alignment OR evals OR "model spec" OR "responsible scaling" OR "AI governance" 2026`
@@ -221,14 +221,64 @@ Use a short section titled **Trends / topics / directions** with:
 - Include AI safety / governance when discourse or policy moves — even if labs are quiet — because founders need the narrative early.
 - Quiet day: still write the section; shorter is fine.
 
+
+
+## K. What to read / what to watch (founder media — talks, tutorials, vlogs)
+
+Goal: surface **high-signal founder/engineer media** early — talks, tutorials, workshop recordings, long essays, curated resource hubs — so Chenyu can watch/read before they go fully viral. Examples he flagged: Lauren Tan (Grok Bot / trust & scale agents / ~1000–2500 PRs), Made with Jev / awesome-jev resource posts, MCP builder showcases.
+
+### What counts (include)
+1. **Talks / workshops** — lab or product engineers (Cursor, OpenAI, Anthropic, xAI/Grok Bot, etc.) on agentic engineering, shipping with agents, evals, trust.
+2. **Tutorials / how-tos** — practical agent stacks, decision models, MCP, coding-agent workflows with a concrete demo.
+3. **Vlogs / short-form explainers** on X, YouTube, Threads, Bilibili, WeChat Channels, Substack video — only if founder-relevant and citable.
+4. **Curated resource hubs** — “save these links” posts, awesome-* repos, project showcases (e.g. madewithjev.com) that compress a category.
+
+### What to skip
+- Pure product ads with no craft/insight; SEO listicles; duplicate mirrors of something already in yesterday’s list (delta only).
+
+### Every run — systematic capture pack
+1. **Named creator / channel watchlist** (grow same day when Chenyu flags a miss):
+   - Lauren Tan / @poteto / Grok Bot engineering talks
+   - TypeSafe / Diogo Almeida / Jev ecosystem explainers
+   - Simon Willison (when agent/decision-model essays)
+   - Add others Chenyu sends screenshots of
+2. **Keyword / discovery pack** (WebSearch → open primary URL):
+   - `(talk OR workshop OR tutorial OR "how I" OR vlog OR recording) (AI agent OR "coding agent" OR GrokBot OR "Grok Bot" OR Cursor OR MCP OR Jev OR "decision model") 2026`
+   - `"Lauren Tan" OR poteto (GrokBot OR "Grok Bot" OR agent) (talk OR video OR workshop)`
+   - `("made with jev" OR madewithjev OR "awesome-jev" OR "awesome jev")`
+   - `(YouTube OR Threads OR "lu.ma" recording OR workshop) (AI agent OR "multi-agent" OR MCP) (engineering OR founder) 2026`
+   - `site:youtube.com (agentic OR "coding agents" OR "AI agents") (engineering OR Cursor OR Anthropic OR OpenAI) 2026` (use judiciously; verify date)
+3. **Secondary discovery:** HN “Show HN” / Ask with video links; lab YouTube / Discord announcement posts via search; Chinese platforms (Bilibili / 视频号) when search returns a public URL — summarize in English + keep original title.
+4. Prefer **primary** link (YouTube, X post, official guide, GitHub). Secondary summary sites OK as accompany, not sole source.
+
+### Output format (section in brief: **What to read / what to watch**)
+Table or short list, **3–8 items max** (quality > quantity). Each row:
+
+| Field | Content |
+|-------|---------|
+| **Title** | Human title + format tag (`Talk` / `Tutorial` / `Essay` / `Resource hub` / `Vlog`) |
+| **Who** | Speaker / author + org if known |
+| **Why now** | 1 line — new, still foundational, or category-defining |
+| **Summary** | 2–4 sentences: what it actually covers (not marketing blurb) |
+| **Link** | Primary URL |
+
+Quiet day: write “nothing material new; holdovers: …” with at most 1–2 still-worth-it items, or “nothing material.”
+
+### Rules
+- **Summarize substance** — if it’s a talk, name the 2–4 pillars (e.g. validation / codebase-as-memory / boundaries).
+- First time in briefs → include even if a few days old (mark date). Already listed → only if new mirror, new part 2, or major update.
+- Grow the named watchlist in this file when Chenyu screenshots a miss.
+- Do not invent video URLs. If only a Chinese repost exists, link that and note original platform if known.
+
 ## Output rules
 
 0. **Discourse is a first-class output.** If HN/X/builders are loudly discussing something founder-relevant and it is new to our briefs or still hot, it belongs in TLDR — even if no frontier lab blogged it today.
 0b. **Trends / topics / directions is Priority #2.** Immediately after TLDR, synthesize hot / rising / next-year directions + keywords + a short founder take (section J). Do not bury this at the bottom.
+0c. **What to read / what to watch (section K)** every day — founder talks, tutorials, vlogs, resource hubs; summarize substance; notify with top picks.
 
 1. TLDR first (include urgent app deadlines + one meta bullet when the discourse shift is big).
-2. Section order: **Trends / topics / directions** → Early signals / stealth radar → Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Bay Area events.
+2. Section order: **Trends / topics / directions** → Early signals / stealth radar → **What to read / what to watch** → Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Bay Area events.
 3. Prefer primary sources; skip rumor without sourcing.
 4. Deduplicate vs yesterday’s brief; only carry forward with material updates.
 5. Publish `briefs/YYYY-MM-DD.md` to main on CharlieChenyuZhang/news-watchdog via `gh` Contents API.
-6. User notify: link + TLDR + **trends callouts** + early-signal callouts + open apps/deadlines.
+6. User notify: link + TLDR + **trends callouts** + early-signal callouts + **1–3 read/watch picks** + open apps/deadlines.
