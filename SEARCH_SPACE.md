@@ -243,6 +243,8 @@ Search for recent posts/videos from these handles/channels (adapt date; open pri
 | Frontier / research talks | Karpathy, lab YouTube (OpenAI, Anthropic, DeepMind, Hugging Face), AI Engineer / NeurIPS workshop uploads | Foundational + new uploads |
 | Podcasts / longform | Latent Space (swyx), Dwarkesh, select YC / a16z AI episodes | Thesis + founder interviews |
 | Indie / shipping builders | High-signal X builders shipping agents/MCP (discover via Layer 2; promote repeats into this table) | Early product craft |
+| **Institutions / newsletters (high-signal)** | **a16z** — a16z.com blog, AI + Speedrun content, a16z YouTube / podcasts; **Y Combinator** — ycombinator.com/blog, Startup School, YC YouTube, Request for Startups / AI posts; **Sequoia** (Arc / AI essays); **Bessemer / Greylock / Benchmark** AI posts when material; **First Round Review**; **Lenny’s Newsletter** (AI product); **Stratechery / Platformer** (strategic AI only); **Latent Space** newsletter | Standing institutional feed — new essays, talks, RFCs, playbooks — not deal announcements alone |
+| Accelerators / operator media | **Techstars**, **Entrepreneur First** blog/talks; **South Park Commons** essays; **Neo** / **HF0** public posts when they ship founder media | Operator-grade founder content adjacent to apps deadlines |
 
 When a **new** creator produces 2+ high-signal items across briefs, **add them to this table in SEARCH_SPACE the same week** (self-growing radar).
 
@@ -255,6 +257,7 @@ Run these (or close variants) every day; prefer last ~7 days; chase primary link
 - `site:youtube.com (Cursor OR Anthropic OR OpenAI OR "AI Engineer" OR "Grok Bot") (agents OR workshop) 2026`
 - `(Threads OR X OR Twitter) (MCP OR Jev OR "coding agent") (tutorial OR resources OR "save these") 2026`
 - Chinese platforms when public URLs appear: `(B站 OR 哔哩哔哩 OR 视频号) (AI agent OR Cursor OR Claude OR 智能体) (教程 OR 分享)` — keep original title + English summary
+- Institutional feeds (always): `site:a16z.com (AI OR agent OR LLM) 2026` · `site:ycombinator.com/blog (AI OR agent OR startup) 2026` · `("a16z" OR "Y Combinator" OR "Startup School") (AI OR agents) (essay OR talk OR podcast OR newsletter) 2026` · `site:sequoiacap.com (AI OR agent) 2026`
 
 **Layer 3 — Follow the builders (amplification graph)**  
 For any hit that scores well: check who they cite / RT / “inspired by,” and whether **that** person has a fresh talk or thread. One hop only per run (don’t rabbit-hole). Prefer builders who ship (GitHub, product, PR charts) over commentators.
@@ -264,7 +267,8 @@ For any hit that scores well: check who they cite / RT / “inspired by,” and 
 2. X / Threads — search + known handles’ recent media  
 3. Luma / conference pages — attached recordings  
 4. Substack / personal blogs — long essays with talk embeds  
-5. HN front page — Show/Ask with video or long-guide links  
+5. HN front page — Show/Ask with video or long-guide links
+6. Institutional newsletters/blogs — a16z, YC, Sequoia, First Round, Latent Space (new posts only; skip fundraising fluff)  
 
 ### Output format (**What to read / what to watch**)
 3–8 items max. Each: Title + format tag · Who · Why now · 2–4 sentence substance summary · Primary link.  
