@@ -3,7 +3,8 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
-Also run **G keywords**, **H discourse**, and **I pre-launch/early-signal radar** every day (complement to direct site checks).
+Also run **G keywords**, **H discourse**, **I pre-launch/early-signal radar**, and **J trends/topics/directions** every day (complement to direct site checks).
+**Priority #2 for the reader:** a short judgmental summary of *what directions are hot* (LLM / agents / AI agency / safety / infra / …) — topics, keywords, what’s heating up next month vs next year — not just a news dump.
 **Priority #1 for the reader:** do not miss high-signal “everyone is talking about this” items (builder Twitter/X, HN, lab Discord/Slack echoes via public posts). Freshness windows below.
 
 ## A. Frontier labs — official content + events
@@ -185,13 +186,49 @@ Never invent a stealth company. Prefer “watch this person/theme” over fake s
 - Include: who, from where, what they’re building (if known), money if known, **how to get closer** (waitlist / email / X), date of signal
 - Dedupe: once covered, only deltas (closed raise, exited stealth, GA launch)
 
+
+
+## J. Trends / topics / directions (PRIORITY #2 — “what’s the meta?”)
+
+Goal: every day, give Chenyu a **synthesis** of where AI / LLM / agents / “AI agency” discourse is pointing — not another news list. Answer: what’s hot *now*, which **topics/keywords** keep recurring, and what looks likely to heat up **next ~month** and **next ~year**. Example signal he care about: a friend saying “AI safety is getting hotter” should show up here with evidence and a call on whether that’s ambient chatter or capital/talent shifting.
+
+### Every run — required synthesis
+1. Scan today’s hits from A–I (labs, papers, HN, capital, policy, early signals) and extract **themes**, not headlines.
+2. Run a light **topics keyword pack** (adapt; don’t invent fake virality):
+   - `(AI OR LLM OR agent OR "AI agent" OR agency) (trend OR thesis OR "everyone is" OR discourse OR narrative) 2026`
+   - `"AI safety" OR alignment OR evals OR "model spec" OR "responsible scaling" OR "AI governance" 2026`
+   - `(agent OR "computer use" OR "tool use" OR "decision model" OR "System One" OR orchestrator OR "agent substrate") (startup OR open-source OR infra) 2026`
+   - `(coding agent OR "AI IDE" OR "software engineer" agent OR SWE-bench) 2026`
+   - `(robotics OR "world model" OR "video model" OR multimodal) (frontier OR lab) 2026`
+   - `(inference OR "GPU" OR "AI infra" OR neocloud OR "open weights") (shortage OR pricing OR capacity) 2026`
+3. Cross-check: HN front-page themes, HF Daily Papers clusters, lab blogs, policy/safety standards bodies, VC thesis posts (only when sourced).
+
+### Output format (place **immediately after TLDR** — second section in the brief)
+Use a short section titled **Trends / topics / directions** with:
+
+| Horizon | What to write |
+|---------|----------------|
+| **Hot now (this week)** | 3–6 topics with 1-line why + 1–2 example links/keywords |
+| **Rising (~next month)** | 2–4 bets that look like they’re accelerating (hiring, papers, OSS, capital) |
+| **Longer bet (~next year)** | 1–3 structural directions (still speculative — label judgment) |
+| **Keywords to watch** | Compact tag list (e.g. `AI safety`, `decision models`, `agent substrate`, `RSI tooling`) |
+| **Founder take** | 2–4 sentences: what to build against / ignore / dig into this week |
+
+### Rules
+- **Judgment required** — say what’s loud vs what’s real (volume ≠ capital ≠ product traction). Mark confidence: **Hot** / **Rising** / **Watch** / **Fading**.
+- Delta-first vs yesterday’s Trends section: if the meta didn’t move, say “meta stable; …” in one line — don’t rewrite the same essay.
+- Tie claims to evidence from this brief’s sources (HN pts, papers, raises, policy). No vibe-only paragraphs.
+- Include AI safety / governance when discourse or policy moves — even if labs are quiet — because founders need the narrative early.
+- Quiet day: still write the section; shorter is fine.
+
 ## Output rules
 
 0. **Discourse is a first-class output.** If HN/X/builders are loudly discussing something founder-relevant and it is new to our briefs or still hot, it belongs in TLDR — even if no frontier lab blogged it today.
+0b. **Trends / topics / directions is Priority #2.** Immediately after TLDR, synthesize hot / rising / next-year directions + keywords + a short founder take (section J). Do not bury this at the bottom.
 
-
-1. TLDR first (include urgent app deadlines).
-2. Sections: Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Trends → Bay Area events.
+1. TLDR first (include urgent app deadlines + one meta bullet when the discourse shift is big).
+2. Section order: **Trends / topics / directions** → Early signals / stealth radar → Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Bay Area events.
 3. Prefer primary sources; skip rumor without sourcing.
 4. Deduplicate vs yesterday’s brief; only carry forward with material updates.
 5. Publish `briefs/YYYY-MM-DD.md` to main on CharlieChenyuZhang/news-watchdog via `gh` Contents API.
+6. User notify: link + TLDR + **trends callouts** + early-signal callouts + open apps/deadlines.
