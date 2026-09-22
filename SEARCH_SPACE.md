@@ -223,52 +223,60 @@ Use a short section titled **Trends / topics / directions** with:
 
 
 
-## K. What to read / what to watch (founder media — talks, tutorials, vlogs)
+## K. What to read / what to watch (founder media — discovery-first)
 
-Goal: surface **high-signal founder/engineer media** early — talks, tutorials, workshop recordings, long essays, curated resource hubs — so Chenyu can watch/read before they go fully viral. Examples he flagged: Lauren Tan (Grok Bot / trust & scale agents / ~1000–2500 PRs), Made with Jev / awesome-jev resource posts, MCP builder showcases.
+Goal: every day, **proactively find** high-signal talks, tutorials, vlogs, long essays, and resource hubs about AI / LLM / agents — including creators Chenyu has **never** named. Do **not** wait for a user-supplied watchlist. User screenshots are optional enrichment only; the spine is a **search + follow-the-builders strategy**.
 
-### What counts (include)
-1. **Talks / workshops** — lab or product engineers (Cursor, OpenAI, Anthropic, xAI/Grok Bot, etc.) on agentic engineering, shipping with agents, evals, trust.
-2. **Tutorials / how-tos** — practical agent stacks, decision models, MCP, coding-agent workflows with a concrete demo.
-3. **Vlogs / short-form explainers** on X, YouTube, Threads, Bilibili, WeChat Channels, Substack video — only if founder-relevant and citable.
-4. **Curated resource hubs** — “save these links” posts, awesome-* repos, project showcases (e.g. madewithjev.com) that compress a category.
+### What counts
+Talks / workshops, practical tutorials, founder/engineer vlogs, conference recordings, curated hubs (awesome-*, Made with Jev–style). Skip pure ads and SEO listicles.
 
-### What to skip
-- Pure product ads with no craft/insight; SEO listicles; duplicate mirrors of something already in yesterday’s list (delta only).
+### Discovery strategy (run every day — this is the method)
 
-### Every run — systematic capture pack
-1. **Named creator / channel watchlist** (grow same day when Chenyu flags a miss):
-   - Lauren Tan / @poteto / Grok Bot engineering talks
-   - TypeSafe / Diogo Almeida / Jev ecosystem explainers
-   - Simon Willison (when agent/decision-model essays)
-   - Add others Chenyu sends screenshots of
-2. **Keyword / discovery pack** (WebSearch → open primary URL):
-   - `(talk OR workshop OR tutorial OR "how I" OR vlog OR recording) (AI agent OR "coding agent" OR GrokBot OR "Grok Bot" OR Cursor OR MCP OR Jev OR "decision model") 2026`
-   - `"Lauren Tan" OR poteto (GrokBot OR "Grok Bot" OR agent) (talk OR video OR workshop)`
-   - `("made with jev" OR madewithjev OR "awesome-jev" OR "awesome jev")`
-   - `(YouTube OR Threads OR "lu.ma" recording OR workshop) (AI agent OR "multi-agent" OR MCP) (engineering OR founder) 2026`
-   - `site:youtube.com (agentic OR "coding agents" OR "AI agents") (engineering OR Cursor OR Anthropic OR OpenAI) 2026` (use judiciously; verify date)
-3. **Secondary discovery:** HN “Show HN” / Ask with video links; lab YouTube / Discord announcement posts via search; Chinese platforms (Bilibili / 视频号) when search returns a public URL — summarize in English + keep original title.
-4. Prefer **primary** link (YouTube, X post, official guide, GitHub). Secondary summary sites OK as accompany, not sole source.
+**Layer 1 — Standing builder radar (check for NEW posts, not a closed list)**  
+Search for recent posts/videos from these handles/channels (adapt date; open primary URL). Treat as *seeds to scan*, not the universe — Layer 2 must still surface strangers.
 
-### Output format (section in brief: **What to read / what to watch**)
-Table or short list, **3–8 items max** (quality > quantity). Each row:
+| Role | Who / handle / channel (examples) | Why |
+|------|-----------------------------------|-----|
+| Agentic eng practice | Lauren Tan / `@poteto`, Grok Bot / x.ai bot guides, Cursor (`@cursor_ai`, Cursor YouTube) | Trust, PR-scale agents, cloud agents |
+| Decision models | TypeSafe / Diogo Almeida / `@CompleteSkeptic`, madewithjev.com, awesome-jev | Jev ecosystem media |
+| Builder essays | Simon Willison (`simonwillison.net` + talks) | Ground-truth tooling writeups |
+| Frontier / research talks | Karpathy, lab YouTube (OpenAI, Anthropic, DeepMind, Hugging Face), AI Engineer / NeurIPS workshop uploads | Foundational + new uploads |
+| Podcasts / longform | Latent Space (swyx), Dwarkesh, select YC / a16z AI episodes | Thesis + founder interviews |
+| Indie / shipping builders | High-signal X builders shipping agents/MCP (discover via Layer 2; promote repeats into this table) | Early product craft |
 
-| Field | Content |
-|-------|---------|
-| **Title** | Human title + format tag (`Talk` / `Tutorial` / `Essay` / `Resource hub` / `Vlog`) |
-| **Who** | Speaker / author + org if known |
-| **Why now** | 1 line — new, still foundational, or category-defining |
-| **Summary** | 2–4 sentences: what it actually covers (not marketing blurb) |
-| **Link** | Primary URL |
+When a **new** creator produces 2+ high-signal items across briefs, **add them to this table in SEARCH_SPACE the same week** (self-growing radar).
 
-Quiet day: write “nothing material new; holdovers: …” with at most 1–2 still-worth-it items, or “nothing material.”
+**Layer 2 — Topic discovery (find people NOT on the table)**  
+Run these (or close variants) every day; prefer last ~7 days; chase primary links:
+
+- `(talk OR workshop OR tutorial OR keynote OR "I built" OR vlog OR recording OR podcast) (AI agent OR "coding agent" OR "multi-agent" OR MCP OR "decision model" OR Jev OR GrokBot OR "Grok Bot") 2026`
+- `("how we" OR "how I" OR "lessons from") (agents OR "AI engineering" OR Cursor OR Claude OR Codex) (PR OR ship OR production) 2026`
+- `(YouTube OR "watch this" OR recording) (agentic OR "coding agents" OR MCP) (engineering OR founder) (2026 OR week)`
+- `site:youtube.com (Cursor OR Anthropic OR OpenAI OR "AI Engineer" OR "Grok Bot") (agents OR workshop) 2026`
+- `(Threads OR X OR Twitter) (MCP OR Jev OR "coding agent") (tutorial OR resources OR "save these") 2026`
+- Chinese platforms when public URLs appear: `(B站 OR 哔哩哔哩 OR 视频号) (AI agent OR Cursor OR Claude OR 智能体) (教程 OR 分享)` — keep original title + English summary
+
+**Layer 3 — Follow the builders (amplification graph)**  
+For any hit that scores well: check who they cite / RT / “inspired by,” and whether **that** person has a fresh talk or thread. One hop only per run (don’t rabbit-hole). Prefer builders who ship (GitHub, product, PR charts) over commentators.
+
+**Layer 4 — Platform pass (lightweight)**  
+1. YouTube / official lab + AI Engineer–style channels — new uploads  
+2. X / Threads — search + known handles’ recent media  
+3. Luma / conference pages — attached recordings  
+4. Substack / personal blogs — long essays with talk embeds  
+5. HN front page — Show/Ask with video or long-guide links  
+
+### Output format (**What to read / what to watch**)
+3–8 items max. Each: Title + format tag · Who · Why now · 2–4 sentence substance summary · Primary link.  
+Quiet day: “nothing material new” (+ optional 1 holdover).  
+Mark **New creator** when Layer 2 found someone not yet on the standing radar.
 
 ### Rules
-- **Summarize substance** — if it’s a talk, name the 2–4 pillars (e.g. validation / codebase-as-memory / boundaries).
-- First time in briefs → include even if a few days old (mark date). Already listed → only if new mirror, new part 2, or major update.
-- Grow the named watchlist in this file when Chenyu screenshots a miss.
-- Do not invent video URLs. If only a Chinese repost exists, link that and note original platform if known.
+- **Strategy > watchlist.** Never skip Layer 2 because Layer 1 was quiet.
+- Summarize pillars/substance; don’t paste thumbnails.
+- First time in briefs → include (mark date). Duplicates → delta only.
+- Do not invent URLs. Chinese repost OK if it’s the best public link — note original if known.
+- User tips: merge into Layer 1 quickly, then keep discovering beyond them.
 
 ## Output rules
 
