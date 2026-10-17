@@ -3,7 +3,7 @@
 Audience: Bay Area tech startup founder (Chenyu). Goal: high-signal daily update, not a firehose.
 Cadence: every day 7:00 AM PT. Prefer last ~24h; mark older items. Every item needs a primary source link.
 Always open with TLDR (3–5 bullets). Quiet categories: write “nothing material” — don’t invent filler.
-Also run **G keywords**, **H discourse**, **I pre-launch/early-signal radar**, **J trends/topics/directions**, and **K what to read / what to watch** every day (complement to direct site checks).
+Also run **G keywords**, **H discourse**, **I pre-launch/early-signal radar**, **J trends/topics/directions**, **K what to read / what to watch**, and **L big tech-world news + upcoming launch events** every day (complement to direct site checks).
 **Priority #2 for the reader:** a short judgmental summary of *what directions are hot* (LLM / agents / AI agency / safety / infra / …) — topics, keywords, what’s heating up next month vs next year — not just a news dump.
 **Priority #1 for the reader:** do not miss high-signal “everyone is talking about this” items (builder Twitter/X, HN, lab Discord/Slack echoes via public posts). Freshness windows below.
 
@@ -290,15 +290,39 @@ Mark **New creator** when Layer 2 found someone not yet on the standing radar.
 - Do not invent URLs. Chinese repost OK if it’s the best public link — note original if known.
 - User tips: merge into Layer 1 quickly, then keep discovering beyond them.
 
+## L. Big tech-world news + upcoming launch events (PRIORITY — “don’t let me miss the big ones”)
+
+Added 2026-10-17 after the brief missed Tesla’s next-gen Roadster unveiling (Oct 15, SpaceX test site in McGregor, TX; delayed from Oct 1) while it was everywhere on X and Xiaohongshu. Chenyu wants **big tech-circle news** even when it is not strictly AI/LLM: SpaceX, Tesla, Apple, Nvidia, Meta, Google, Microsoft, Amazon, OpenAI/xAI-adjacent corporate events, robotics, space, chips, EVs, major IPOs. If the whole tech world is talking about it, it belongs in the brief.
+
+### Two jobs, every run
+1. **Heads-up radar (forward-looking, most important).** List scheduled launch events, keynotes, unveilings, earnings calls with big announcements, IPO dates, and rocket/product launches in the **next ~14 days**, with date + time in PT, livestream link, and one line on why it matters. Chenyu should hear about an event **days before** it happens, not after. Re-list an event again the day before and the morning of (short reminder). Also note postponements (e.g. “moved from Oct 1 to Oct 15, weather”).
+2. **What just happened (last 24–72h).** Big tech news that dominated X / Xiaohongshu / Weibo / Reddit / HN / YouTube even if no AI lab was involved. Summarize what was announced, the key numbers (with who claimed them), what is still unverified, and the founder-relevant angle (supply chain, talent, competition, distribution, capital).
+
+### Watchlist of companies and people (grow it when Chenyu flags a miss)
+Tesla / Elon Musk, SpaceX / Starship / Starlink, xAI, Apple, Nvidia (GTC, Jensen), Meta, Google (I/O, Pixel), Microsoft, Amazon, Waymo, Figure / Boston Dynamics / robotics, OpenAI hardware (io), Neuralink, big IPO filings (SpaceX, Anthropic, others).
+
+### Sources and queries
+- Company event pages and X posts (Tesla, SpaceX, Apple Newsroom, Nvidia, Google, Meta) for event announcements and livestream times.
+- Electrek, The Verge, TechCrunch, Reuters, Bloomberg, The Information, CNBC for confirmation; Wikipedia for dates once an event is announced.
+- Social buzz (verify before citing): X trending, **Xiaohongshu (小红书)**, Weibo, Reddit r/technology r/teslamotors r/spacex, YouTube live streams. Use Chinese queries too (例如 “特斯拉 发布会”, “SpaceX 发射”, “马斯克”, “苹果 发布会”, “英伟达 发布”) since Chenyu follows Chinese-language tech buzz.
+- Standing queries (adapt dates): `(Tesla OR SpaceX OR Apple OR Nvidia OR Meta OR Google) (event OR unveil OR keynote OR launch OR livestream) (this week OR next week) 2026`; `"launch event" OR unveiling OR keynote tech 2026`; `Starship OR "Starlink" OR Roadster OR Optimus OR Cybercab 2026`.
+
+### Output placement
+- **TLDR:** include any big-tech event happening in the next ~3 days or any huge story from the last 24h.
+- Add a short section **“Big tech news & upcoming events”** right after **What to read / what to watch** (or higher in the order if the story is dominant). Include: event/news, date + PT time, link, one-line why it matters, confidence label (Confirmed / Likely / Rumor) for anything not officially announced.
+- **User notify message:** a dedicated short callout, “Heads-up: upcoming big tech events (next 14 days)” plus any huge story from the last day. Never skip it just because it is not AI.
+- Dedupe: once covered, only deltas (new date, postponement, results, price, reactions).
+
 ## Output rules
 
 0. **Discourse is a first-class output.** If HN/X/builders are loudly discussing something founder-relevant and it is new to our briefs or still hot, it belongs in TLDR — even if no frontier lab blogged it today.
 0b. **Trends / topics / directions is Priority #2.** Immediately after TLDR, synthesize hot / rising / next-year directions + keywords + a short founder take (section J). Do not bury this at the bottom.
 0c. **What to read / what to watch (section K)** every day — founder talks, tutorials, vlogs, resource hubs; summarize substance; notify with top picks.
+0d. **Big tech-world news + upcoming launch events (section L)** every day — Tesla, SpaceX, Apple, Nvidia and other tech-circle big news even when it is not AI; give a 14-day heads-up list of scheduled events (date + PT time + link) so Chenyu knows days in advance; notify with a dedicated callout.
 
 1. TLDR first (include urgent app deadlines + one meta bullet when the discourse shift is big).
-2. Section order: **Trends / topics / directions** → Early signals / stealth radar → **What to read / what to watch** → Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Bay Area events.
+2. Section order: **Trends / topics / directions** → Early signals / stealth radar → **What to read / what to watch** → **Big tech news & upcoming events (L)** → Lab site updates → Lab/Luma events → Incubator apps & events → News/products → Papers/discourse → Bay Area events.
 3. Prefer primary sources; skip rumor without sourcing.
 4. Deduplicate vs yesterday’s brief; only carry forward with material updates.
 5. Publish `briefs/YYYY-MM-DD.md` to main on CharlieChenyuZhang/news-watchdog via `gh` Contents API.
-6. User notify: link + TLDR + **trends callouts** + early-signal callouts + **1–3 read/watch picks** + open apps/deadlines.
+6. User notify: link + TLDR + **trends callouts** + early-signal callouts + **1–3 read/watch picks** + **big-tech heads-up (next 14 days) + any huge story from the last day** + open apps/deadlines.
