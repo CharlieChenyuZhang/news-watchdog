@@ -298,6 +298,13 @@ Added 2026-10-17 after the brief missed Tesla’s next-gen Roadster unveiling (O
 1. **Heads-up radar (forward-looking, most important).** List scheduled launch events, keynotes, unveilings, earnings calls with big announcements, IPO dates, and rocket/product launches in the **next ~14 days**, with date + time in PT, livestream link, and one line on why it matters. Chenyu should hear about an event **days before** it happens, not after. Re-list an event again the day before and the morning of (short reminder). Also note postponements (e.g. “moved from Oct 1 to Oct 15, weather”).
 2. **What just happened (last 24–72h).** Big tech news that dominated X / Xiaohongshu / Weibo / Reddit / HN / YouTube even if no AI lab was involved. Summarize what was announced, the key numbers (with who claimed them), what is still unverified, and the founder-relevant angle (supply chain, talent, competition, distribution, capital).
 
+### Search strategy — run ALL THREE layers every day (decided 2026-10-17)
+Big events are found by **buzz and calendars first, company names last**. A company not on the watchlist must still be caught.
+1. **Layer 1 — Broad buzz sweep (no company names).** Ask "what is the tech world talking about right now?": X trends/news (`get_trends`, `search_news`), Hacker News front page, Reddit hot (r/technology and similar), YouTube live/trending tech streams, plus Chinese platforms (小红书, 微博, 抖音, 知乎) with generic queries such as `发布会`, `首发`, `直播`, `刷屏`, `热搜 科技`. Generic English queries: `launch event`, `unveiling`, `keynote`, `livestream`, `"this week" OR "next week"` + tech. An item counts as big when several platforms are talking about it at once, whatever the company.
+2. **Layer 2 — Forward calendar.** Scan for scheduled events: tech event calendars, news phrased "will unveil / scheduled for / livestream at", known recurring dates (Apple fall events, Nvidia GTC, Google/Meta/Microsoft events, Starship launch windows, earnings days, IPO dates, big conferences). Build the 14-day heads-up list from this.
+3. **Layer 3 — Named watchlist backstop.** Check each watchlist name below directly (official site/X account), so nothing important to Chenyu is missed even when buzz is thin. Anything new found by Layers 1–2 that recurs gets added to the watchlist.
+Never skip a layer because another was quiet.
+
 ### Watchlist of companies and people (grow it when Chenyu flags a miss)
 Tesla / Elon Musk, SpaceX / Starship / Starlink, xAI, Apple, Nvidia (GTC, Jensen), Meta, Google (I/O, Pixel), Microsoft, Amazon, Waymo, Figure / Boston Dynamics / robotics, OpenAI hardware (io), Neuralink, big IPO filings (SpaceX, Anthropic, others).
 
